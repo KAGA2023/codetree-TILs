@@ -26,7 +26,7 @@ int main() {
     }
 
     bool result=Func(arr1,arr2,length1,length2);
-    if(result==true) cout<<"Yes";
+    if(result) cout<<"Yes";
     else cout<<"No";
 
     delete[] arr1;
