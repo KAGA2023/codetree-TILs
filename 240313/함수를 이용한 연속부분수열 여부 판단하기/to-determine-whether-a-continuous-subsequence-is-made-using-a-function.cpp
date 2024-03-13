@@ -2,7 +2,7 @@
 using namespace std;
 
 bool Func(int* arr1,int* arr2,int length1,int length2){
-    for(int i=0;i<length1-length2;i++){  //i는 a 몇번째부터 비교할건지
+    for(int i=0;i<=length1-length2;i++){  //i는 a 몇번째부터 비교할건지
         for(int j=0;j<length2;j++){ //j는 몇번째 까지 비교할건지
             if(arr1[i+j]!=arr2[j]) break;
             return true;
