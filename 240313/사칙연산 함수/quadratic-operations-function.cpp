@@ -30,7 +30,7 @@ int main() {
     else if(o=='*')
         Mul(a,c);
     else
-        cout<<"false";
+        cout<<"False";
 
 
     return 0;
