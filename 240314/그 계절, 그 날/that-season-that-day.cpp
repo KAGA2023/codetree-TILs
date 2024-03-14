@@ -73,7 +73,10 @@ int main() {
     int Y,M,D;
     cin>>Y>>M>>D;
 
-    if(Exist(Y,M,D)==false) return -1;
+    if(Exist(Y,M,D)==false){
+        cout<<-1;
+        return 0;
+    }
 
     Season(M);
     return 0;
