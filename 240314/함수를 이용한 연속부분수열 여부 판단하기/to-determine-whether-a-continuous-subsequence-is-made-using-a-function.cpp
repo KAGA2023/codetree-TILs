@@ -2,12 +2,14 @@
 using namespace std;
 
 bool Func(int* arr1,int* arr2,int length1,int length2){
+    int count=0;
     for(int i=0;i<=length1-length2;i++){  //i는 arr1[i] 몇번째까지 비교할건지
+        count=0;
         for(int j=0;j<length2;j++){ //j는 arr2[j] 전부 비교하기
             if(arr1[i+j]!=arr2[j]) break;
-            
+            count++;
         }
-        return true;
+        if(count==length2) return true;
     }
     return false;
 }
